@@ -1,0 +1,89 @@
+﻿@media(min-width: 992px)
+	.btn
+		transition: all .3s ease
+		&--stroke:hover
+			background-color: $red
+			color: #fff
+		&--dark-stroke:hover
+			background-color: $dark
+			color: #fff
+	.header
+		&__contact-link:hover
+			color: $red
+		&__menu
+			&-list
+				>li
+					>a
+						white-space: nowrap
+						overflow: hidden
+						text-overflow: ellipsis
+						transition: all .3s ease
+						&:after
+							content: ''
+							font: normal normal 18px/1 fontAwesome
+							display: inline-block
+							position: absolute
+							right: 10px
+							top: calc(50% - .5em)
+							color: transparent
+							pointer-events: none
+							transition: inherit
+					&:hover>a
+						font-weight: bold
+						padding-right: 40px
+						&:after
+							right: 20px
+							color: $red
+	.cat-nav
+		&__item
+			overflow: hidden
+			&-btn
+				display: block
+				opacity: 0
+				pointer-events: none
+				transition: all .3s ease
+				margin: 0 0 -45px
+			&:hover &-btn
+				opacity: 1
+				pointer-events: auto
+				margin: 11px 0 6px
+			&:hover &-title
+				border-color: currentColor
+	.category-card
+		transition: all .3s ease
+		outline: 2px solid transparent
+		outline-offset: -2px
+		&:hover
+			outline-color: $red
+		&:hover &__pic:before
+			padding-top: calc(100% - 62px)
+		&__btn
+			opacity: 0
+			margin-bottom: -62px
+		&:hover &__btn
+			opacity: 1
+			margin-bottom: 0
+	.footer
+		&__menu
+			a:hover
+				color: $red
+		&__contact-info
+			&[href]:hover
+				color: $red
+		&__social
+			a
+				transition: all .15s ease
+				&:hover
+					color: #fff
+@media(max-width:1199px)
+	.wrapper
+		max-width: 992px
+  
+//@media(max-width:991px)
+	
+
+//@media(max-width:767px)
+	
+
+//@media(max-width:480px)
+	
