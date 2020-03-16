@@ -51,7 +51,7 @@
 							<li><a href="#"><i class="icon-battery"></i> Аккумуляторы</a></li>
 						</ul>
 					</div>
-					<form class="search header__search">
+					<form action="search.php" class="search header__search">
 						<select class="search__select">
 							<option disabled selected>Категория</option>
 							<option>Запчасти МТЗ</option>
@@ -62,7 +62,7 @@
 							<option>Гидрооборудование</option>
 							<option>Аккумуляторы</option>
 						</select>
-						<input type="text" class="search__input" placeholder="Поиск по наименованию или артикулу">
+						<input type="search" class="search__input" placeholder="Поиск по наименованию или артикулу">
 						<button class="btn btn--small btn--dark btn--search search__btn">Найти</button>
 						<div class="search__content">
 							<h3 class="search__subtitle">Основной каталог товаров</h3>

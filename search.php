@@ -12,7 +12,7 @@
 			<div class="wrapper">
 				<h1 class="section-title search-page__title">Поиск</h1>
 				<form action="" class="search-page__form">
-					<input type="text" class="search-page__input" placeholder="Поиск по наименованию или артикулу" required />
+					<input type="search" class="search-page__input" placeholder="Поиск по наименованию или артикулу" required />
 					<button class="btn btn--search btn--small search-page__btn">Найти</button>
 				</form>
 				<div class="search-page__content">
