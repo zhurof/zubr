@@ -800,7 +800,103 @@ ul,ol
 	padding: 70px 0 50px
 	&__content
 		color: #828282
-		
+.product-block
+	display: flex
+	border: 1px solid #E7E7E7
+	padding: 10px 15px
+	align-items: flex-start
+	color: #333
+	margin: 0 0 15px
+	&:last-child
+		margin-bottom: 0
+	&__pic
+		width: 150px
+		height: 150px
+		margin-right: 30px
+		position: relative
+		display: block
+		flex: 0 0 auto
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			max-height: 100%
+	&__text
+		flex: 1 1 auto
+		padding: 18px 0 14px
+	&__breadcrumbs
+		color: #2a2a2a
+		font-size: 14px
+		margin: 0 0 6px
+		&:last-child
+			margin-bottom: 0
+		a
+			text-decoration: none
+	&__title
+		font-family: inherit
+		margin: 0 0 6px
+		a
+			text-decoration: none
+	&__description
+		margin: 0 0 19/16*1em
+		&:last-child
+			margin-bottom: 0
+	&__price
+		font-size: 24px
+		font-weight: bold
+.pagination
+	text-align: center
+	user-select: none
+	margin: 80px 0 0
+	&:first-child
+		margin-top: 0
+	&__arrow
+		display: inline-block
+		vertical-align: top
+		width: 50px
+		height: 50px
+		line-height: 48px
+		text-align: center
+		color: $red
+		font-size: 25px
+		border: 1px solid
+		text-decoration: none
+		margin: 5px
+		&:first-child
+			margin-right: 55px
+		&:last-child
+			margin-left: 55px
+	&__link
+		display: inline-block
+		width: 50px
+		height: 50px
+		border: 1px solid #E7E7E7
+		line-height: 48px
+		text-align: center
+		color: #2A2A2A
+		font-size: 14px
+		font-weight: bold
+		text-decoration: none
+		margin: 5px
+		&--active
+			background-color: $red
+			color: #fff
+			border-color: $red		
+.search-page
+	padding: 75px 0
+	&__form
+		display: flex
+		align-items: flex-start
+	&__input
+		width: auto
+		padding-top: 11px
+		padding-bottom: 11px
+		flex: 1 1 auto
+		border: 1px solid $red
+		border-right: 0
+	&__btn
+		flex: 0 0 auto		
 /*ПОДВАЛ*/
 .footer
 	&:before
@@ -880,9 +976,5 @@ ul,ol
 			margin-top: 11px
 			&:first-child
 				margin-top: 0
-				
-			
-			
-		
 /*АДАПТИВ*/
 @import "adaptive"

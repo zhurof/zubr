@@ -4,6 +4,9 @@
 		&--stroke:hover
 			background-color: $red
 			color: #fff
+		&--dark:hover
+			background-color: #2A2C3F
+			border-color: #2A2C3F
 		&--dark-stroke:hover
 			background-color: $dark
 			color: #fff
@@ -271,6 +274,15 @@
 		padding: 20px 0
 	.text-block
 		padding: 50px 0
+	.pagination
+		margin: 40px 0 0
+		&__arrow
+			&:first-child
+				margin-right: 5px
+			&:last-child
+				margin-left: 5px
+	.search-page
+		padding: 36px 0
 	.footer
 		border-top: 1px solid #E7E7E7
 		&:before
@@ -360,6 +372,22 @@
 			padding: 0
 			&:last-child
 				margin-bottom: 0
+	.product-block
+		display: block
+		&__pic
+			width: 100%
+			margin: 0 auto 10px
+	.pagination
+		&__arrow
+			width: 30px
+			height: 30px
+			line-height: 28px
+			margin: 2.5px
+		&__link
+			width: 30px
+			height: 30px
+			line-height: 28px
+			margin: 2.5px
 	.footer
 		&__menu
 			columns: 1
