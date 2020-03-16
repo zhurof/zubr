@@ -42,7 +42,15 @@ $('.top-block').slick({
 	dotsClass: 'top-block__dots',
 	customPaging: function(slick,i){
 		return '<strong>'+leadingZero(i+1)+'/</strong>'+leadingZero(slick.slideCount);
-	}
+	},
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				arrows: false
+			}
+		}
+	]
 })
 $('.category-block__filter li').click(function(){
 	if(!$(this).is('.active')){
@@ -58,5 +66,21 @@ $('.category-block__filter li').click(function(){
 $('.category-block__slider').slick({
 	slidesToShow: 4,
 	prevArrow: '<span class="fa-angle-left category-block__arrow category-block__arrow--prev">',
-	nextArrow: '<span class="fa-angle-right category-block__arrow category-block__arrow--next">'
+	nextArrow: '<span class="fa-angle-right category-block__arrow category-block__arrow--next">',
+	responsive: [
+		{
+			breakpoint: 1320,
+			settings: {
+				slidesToShow: 3
+			}
+		},{
+			breakpoint: 992,
+			settings: {
+				variableWidth: true,
+				centerMode: true,
+				centerPadding: 0,
+				arrows: false
+			}
+		}
+	]
 })

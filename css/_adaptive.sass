@@ -17,7 +17,7 @@
 						white-space: nowrap
 						overflow: hidden
 						text-overflow: ellipsis
-						transition: all .3s ease
+						transition: padding .3s ease
 						&:after
 							content: ''
 							font: normal normal 18px/1 fontAwesome
@@ -27,7 +27,7 @@
 							top: calc(50% - .5em)
 							color: transparent
 							pointer-events: none
-							transition: inherit
+							transition: all .3s ease
 					&:hover>a
 						font-weight: bold
 						padding-right: 40px
@@ -75,15 +75,298 @@
 				transition: all .15s ease
 				&:hover
 					color: #fff
-@media(max-width:1199px)
+@media(max-width: 1319px)
 	.wrapper
 		max-width: 992px
-  
-//@media(max-width:991px)
-	
+	.header
+		&__logo
+			width: 177px
+			margin-right: 7.5px
+		&__contact
+			margin: 0 7.5px
+		&__tool
+			margin-left: 15px
+		&__btn
+			margin: 0 7.5px
+	.top-block
+		&__text
+			width: 50%
+			padding-left: calc(50% - 480px)
+		&__arrow
+			&--prev
+				left: calc(50% - 480px)
+			&--next
+				left: calc(50% - 436px)
+		&__dots
+			left: calc(50% - 370px)
+	.section-title
+		&:after
+			width: calc(50vw - 410px)
+	.category-card
+		width: 300px
+	.category-block
+		&__slider
+			padding: 0 56px
+		&__arrow
+			&--prev
+				left: -10px
+			&--next
+				right: -10px
+	.feedback
+		&__inner
+			display: block
+			padding: 30px
+		&__main
+			width: auto
+			padding: 0
+		&__text
+			max-width: 600px
+		&__form
+			width: auto
+			max-width: 600px
+			margin: 20px 0 0
+	.footer
+		&:before
+			width: 962px
+@media(max-width:991px)
+	h1,h2
+		margin: 0 0 .6em
+	.btn
+		&--menu
+			font-size: 0
+			&:before
+				font-size: 14px
+				line-height: inherit
+				margin: 0
+				vertical-align: middle
+	.search
+		padding-right: 0
+		&__select
+			display: none
+		&__input
+			border-left: 1px solid $red
+		&__content
+			padding: 22px 15px
+			max-height: calc(100vh - 50px)
+			overflow: auto
+	.header
+		padding: 10px 0
+		margin: 0 0 50px
+		&__contact
+			display: none
+		&__btn
+			margin: 0 auto
+		&__tool
+			margin: 0
+			padding: 15px
+			&[data-amount]:after
+				top: 0
+			i
+				margin: 0
+			span
+				display: none
+		&__bottomline
+			background-color: rgba(2, 2, 2, 0.6)
+			top: 100%
+			color: #fff
+			&--fixed
+				top: 0
+				background-color: rgba(2, 2, 2, 0.6)
+			.wrapper
+				padding: 0
+			&-inner
+				background: none
+				box-shadow: none
+		&__menu
+			width: 50px
+			order: 1
+			position: static
+		&__search
+			position: static
+		&__cart
+			padding: 15px
+			line-height: 1
+			&[data-amount]:after
+				top: 4px
+				right: 4px
+	.top-block
+		&__slide
+			&.slick-slide
+				display: block
+		&__text
+			padding: 50px 15px 80px
+			background-color: rgba(42, 42, 42, 0.4)
+			width: auto
+			height: 100%
+			backdrop-filter: none
+			text-align: center
+		&__dots
+			left: auto
+			right: 15px
+			bottom: 15px
+	.section-title
+		padding-bottom: 0
+		&:after
+			display: none
+	.cat-nav
+		padding: 36px 0
+		&__banner
+			display: none
+		&__title
+			padding: 0
+			text-align: center
+		&__box
+			display: flex
+		&__item
+			flex-basis: calc(100% / 3)
+	.category-card
+		width: 262px
+	.category-block
+		padding: 36px 0
+		&__head
+			display: block
+			text-align: center
+		&__filter
+			flex-wrap: wrap
+			justify-content: center
+		&__slider
+			padding: 0
+		&__box
+			justify-content: center
+	.feedback
+		background: url(../img/feedback.jpg) no-repeat center/cover
+		padding: 30px 0
+		text-align: center
+		&__inner
+			padding: 0
+			background: none
+		&__text
+			padding: 0
+			max-width: 100%
+			&:before
+				display: none
+		&__form
+			display: block
+			max-width: 290px
+			margin: 20px auto 0
+		&__input
+			margin: 0 0 15px
+			&:last-child
+				margin-bottom: 0
+		&__btn
+			display: block
+			width: 100%
+			padding: 0 10px
+	.about-block
+		padding: 36px 0
+		margin: 0
+		background: none
+		&__main
+			padding: 0
+		&__text
+			font-size: inherit
+		&__company
+			display: none
+	.breadcrumbs
+		padding: 20px 0
+	.text-block
+		padding: 50px 0
+	.footer
+		border-top: 1px solid #E7E7E7
+		&:before
+			display: none
+		&__topline
+			padding: 25px 0 35px
+		&__box
+			display: block
+			margin: 0
+		&__column
+			margin: 0 0 30px
+			&:last-child
+				margin-bottom: 0
+		&__menu
+			>li>a
+				padding: .25em 0
+		&__bottomline
+			text-align: center
+			.wrapper
+				display: block
+		&__copy,
+		&__text
+			margin: 0 0 1em
+			&:last-child
+				margin-bottom: 0			
 
-//@media(max-width:767px)
-	
+@media(max-width:767px)
+	h1,h2
+		font-size: 28px
+		line-height: 1
+	.cat-nav
+		&__item
+			flex-basis: 50%
+			&-title
+				font-size: 18px
 
-//@media(max-width:480px)
+@media(max-width:480px)
+	.fancybox-slide--html .fancybox-close-small
+		right: 0
+		top: 0
+		color: inherit
+		padding: 10px
+	.modal
+		padding: 30px 20px
+	.search
+		&__btn
+			display: none
+		&__input
+			border-right: 1px solid $red
+	.header
+		&__btn
+			display: none
+		&__logo
+			margin-right: auto
+		&__menu
+			margin-left: 7.5px
+	.top-block
+		&__text
+			h2
+				font-size: 30px				
+	.cat-nav
+		&__box
+			display: block
+		&__item
+			min-height: 220px
+	.category-block
+		&__title
+			margin: 0 0 .5em
+		&__filter
+			display: block
+			font-size: inherit
+			border: 1px solid $red
+			>li
+				display: block
+				padding: 10px
+				border-bottom: 1px solid $red
+				&:last-child
+					border-bottom: none
+				&.active
+					background-color: $red
+					color: #fff
+				&:before
+					display: none
+	.advantages
+		display: block
+		&__item
+			padding: 0
+			&:last-child
+				margin-bottom: 0
+	.footer
+		&__menu
+			columns: 1
+		&__contacts
+			display: block
+			&-column
+				margin: 0 0 27px
+				&:last-child
+					margin-bottom: 0
 	

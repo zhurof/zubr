@@ -40,6 +40,7 @@ body
 	display: flex
 	flex-direction: column
 	min-height: 100vh
+	min-width: 320px
 	font: normal normal 16px/normal Gilroy,sans-serif
 
 header,footer
@@ -322,6 +323,8 @@ ul,ol
 			align-items: center
 	&__logo
 		margin: 0 15px 0 0
+		width: 263px
+		flex: 0 0 auto
 	&__contact
 		flex: 1 1 200px
 		margin: 0 15px
@@ -341,6 +344,7 @@ ul,ol
 		margin: 0 0 .5em
 	&__btn
 		margin: 0 15px
+		flex: 0 0 auto
 	&__tool
 		display: inline-block
 		text-decoration: none
@@ -476,17 +480,10 @@ ul,ol
 			line-height: 1
 			margin: 0 0 .35em
 	&__arrow
-		display: inline-block
-		width: 45px
-		height: 45px
 		color: #fff
 		border: 1px solid
-		text-align: center
-		line-height: 43px
 		position: absolute
-		z-index: 2
 		bottom: 80px
-		cursor: pointer
 		&--prev
 			left: calc(50% - 540px)
 		&--next
@@ -598,9 +595,13 @@ ul,ol
 	padding: 25px
 	text-align: center
 	overflow: hidden
+	display: flex
+	flex-direction: column
 	&.slick-slide
 		animation: fadeIn .3s ease
 		height: auto
+		margin-bottom: 0
+		display: flex
 	&__pic
 		position: relative
 		margin: 0 0 27px
@@ -619,7 +620,7 @@ ul,ol
 			max-height: 100%
 	&__title
 		font-family: inherit
-		margin: 0
+		margin: 0 0 auto
 	&__btn
 		margin-top: 12px
 		&:after
@@ -663,10 +664,13 @@ ul,ol
 		&:last-child
 			margin-bottom: 0
 	&__slider
+		margin: 0 0 30px
 		&:not(.slick-initialized)
 			display: flex
 			flex-wrap: wrap
 			margin: 0 -15px
+		&:last-child
+			margin-bottom: 0
 		.slick-track
 			display: flex
 		.slick-list
@@ -775,7 +779,27 @@ ul,ol
 			font: inherit
 			font-weight: bold
 			margin: 0
-			
+.breadcrumbs
+	background-color: transparentize($red,.9)
+	padding: 54px 0 28px
+	font-size: 14px
+	color: #2A2A2A
+	&__list
+		+unlist
+		>li
+			display: inline-block
+			&:after
+				content: ' — '
+			&:last-child
+				font-weight: bold
+				&:after
+					display: none
+			>a
+				text-decoration: none
+.text-block
+	padding: 70px 0 50px
+	&__content
+		color: #828282
 		
 /*ПОДВАЛ*/
 .footer

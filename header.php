@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Верстка</title>
-	<meta name="viewport" content="width=1440, shrink-to-fit=no" />	
+	<meta name="viewport" content="width=device-width, shrink-to-fit=no" />	
 	<link rel="stylesheet" href="css/fonts.css" />	
 	<link rel="stylesheet" href="css/font-awesome.css" />
 	<link rel="stylesheet" href="libs/slick/slick.css" />

@@ -28,7 +28,7 @@
 								</div>
 								<div class="footer__contact">
 									<h4 class="footer__contact-title"><i class="icon-clock">&nbsp;</i> Время работы</h4>
-									<span class="footer__contact-info">09<sup>00</sup> - 19<sup>00</sup>. Ежедневно</span>
+									<span class="footer__contact-info">09⁰⁰ - 19⁰⁰. Ежедневно</span>
 								</div>
 							</div>
 							<div class="footer__contacts-column">
