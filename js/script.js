@@ -34,6 +34,23 @@ $(window).on('load scroll',function(){
 		$('.header__bottomline').removeClass('header__bottomline--fixed');
 	}
 })
+//кастомный input[type=number]
+$('.number-field__btn').click(function(){
+	var input = $(this).siblings('input')[0],
+			min = input.min || 0,
+			max = input.max || 99,
+			step = input.step || 1,
+			value = input.value || min;
+
+	if($(this).is('.number-field__btn--plus') && value <= max-step){
+		input.value = +value + +step;
+		$(input).trigger('change');
+	}
+	if($(this).is('.number-field__btn--minus') && value >= +min + +step){
+		input.value = value - step;
+		$(input).trigger('change');
+	}
+})
 //
 $('.top-block').slick({
 	prevArrow: '<span class="fa-angle-left top-block__arrow top-block__arrow--prev" />',

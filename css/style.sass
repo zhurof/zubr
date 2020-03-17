@@ -126,6 +126,59 @@ select
 	&::-webkit-inner-spin-button
 		appearance: none
 		margin: 0
+.text-radio
+	display: inline-block
+	position: relative
+	cursor: pointer
+	color: #2a2a2a
+	&__input
+		margin: 0
+		width: 0
+		height: 0
+		position: absolute
+		z-index: -1
+		opacity: 0
+	&__btn
+		display: block
+		min-width: 120px
+		text-align: center
+		border: 1px solid #E7E7E7
+		font-size: 14px
+		line-height: 23px
+		background-color: #fff
+		padding: 0 10px
+		transition: color .3s ease,border-color .3s ease
+	&__input:checked + &__btn
+		font-weight: bold
+		color: $red
+		border-color: $red
+.number-field
+	display: inline-flex
+	vertical-align: top
+	font-size: 16px
+	line-height: normal
+	&__btn
+		width: 30px
+		height: 30px
+		border: 1px solid #E7E7E7
+		text-align: center
+		line-height: 28px
+		flex: 0 0 auto
+		user-select: none
+		cursor: pointer
+	&__input
+		width: 30px
+		height: 30px
+		flex: 0 0 auto
+		border: none
+		padding: 0
+		margin: 0
+		text-align: center
+		-moz-appearance: textfield
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button
+			appearance: none
+			margin: 0
 		
 /*кнопки*/
 button,
@@ -896,7 +949,119 @@ ul,ol
 		border: 1px solid $red
 		border-right: 0
 	&__btn
-		flex: 0 0 auto		
+		flex: 0 0 auto
+.filter
+	padding: 15px 30px
+	background-color: #F6F6F6
+	font-size: 14px
+	color: #2a2a2a
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 30px
+	&:last-child
+		margin-bottom: 0
+	&__label
+		margin: 0 15px 0 25px
+		&:first-child
+			margin-left: 0
+		&:last-child
+			margin-right: 0
+	&__option
+		margin: 0 15px 0 0
+		&:last-child
+			margin-right: 0
+	&__select
+		padding: 3px 37px 3px 14px
+		margin: 0 15px 0 0
+		background-size: 8px auto
+		background-position: right 12px center
+	&__view-btn
+		cursor: pointer
+		margin: 0 0 0 30px
+		&--active
+			color: $red
+		&:nth-last-child(2)
+			margin-left: auto
+		i,span
+			vertical-align: middle
+.product-card
+	width: 262px
+	min-height: 393px
+	display: flex
+	flex-direction: column
+	align-items: center
+	border: 1px solid #E7E7E7
+	margin: 0 15px 30px
+	position: relative
+	padding: 20px 15px 30px
+	font-size: 14px
+	text-align: center
+	color: #333
+	&__pic
+		display: block
+		width: 100%
+		position: relative
+		margin: 0 0 20px
+		&:last-child
+			margin-bottom: 0
+		&:before
+			content: ''
+			display: block
+			padding-top: 70%
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			max-height: 100%
+	&__main
+		margin: 0 0 4px
+		&:last-child
+			margin-bottom: 0
+	&__id
+		margin: 0 0 .5em
+		color: #000
+		&:last-child
+			margin-bottom: 0
+	&__title
+		font-family: inherit
+		line-height: 1.15
+	&__price
+		font-size: 24px
+		font-weight: bold
+		margin: auto 0 9px
+		&:last-child
+			margin-bottom: 0
+		&--wholesale
+			display: none
+	&__amount
+		display: none
+	&__btn
+		width: 200px
+		position: static
+		&:before
+			content: ''
+			+pos
+	
+.catalog
+	padding: 75px 0
+	&__thead
+		display: none
+		align-items: baseline
+		color: #2a2a2a
+		font-size: 14px
+		text-transform: uppercase
+		padding: 0 230px 0 135px
+		&--active
+			display: flex
+	&__th
+		width: 98px
+		padding: 1em .5em 1em 0
+		&:first-child
+			flex: 1 1 auto
+	&__pagination
+		margin-top: 50px
 /*ПОДВАЛ*/
 .footer
 	&:before
