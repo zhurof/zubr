@@ -42,13 +42,13 @@
 					<div class="header__menu">
 						<div class="btn btn--block btn--menu header__menu-btn">Каталог</div>
 						<ul class="header__menu-list">
-							<li><a href="#"><i class="icon-tractor"></i> Запчасти МТЗ</a></li>
-							<li><a href="#"><i class="icon-truck"></i> Запчасти МАЗ</a></li>
-							<li><a href="#"><i class="icon-harvester"></i> Запчасти Амкодор</a></li>
-							<li><a href="#"><i class="icon-van"></i> Запчасти ГАЗ (УАЗ)</a></li>
-							<li><a href="#"><i class="icon-canister"></i> Технические жидкости</a></li>
-							<li><a href="#"><i class="icon-hydraulics"></i> Гидрооборудование</a></li>
-							<li><a href="#"><i class="icon-battery"></i> Аккумуляторы</a></li>
+							<li><a href="catalog.php"><i class="icon-tractor"></i> Запчасти МТЗ</a></li>
+							<li><a href="catalog.php"><i class="icon-truck"></i> Запчасти МАЗ</a></li>
+							<li><a href="catalog.php"><i class="icon-harvester"></i> Запчасти Амкодор</a></li>
+							<li><a href="catalog.php"><i class="icon-van"></i> Запчасти ГАЗ (УАЗ)</a></li>
+							<li><a href="catalog.php"><i class="icon-canister"></i> Технические жидкости</a></li>
+							<li><a href="catalog.php"><i class="icon-hydraulics"></i> Гидрооборудование</a></li>
+							<li><a href="catalog.php"><i class="icon-battery"></i> Аккумуляторы</a></li>
 						</ul>
 					</div>
 					<form action="search.php" class="search header__search">
@@ -67,12 +67,12 @@
 						<div class="search__content">
 							<h3 class="search__subtitle">Основной каталог товаров</h3>
 							<ul class="search__results">
-								<li><a href="#">Запчасть 1</a></li>
-								<li><a href="#">Запчасть 2</a></li>
-								<li><a href="#">Запчасть 3</a></li>
-								<li><a href="#">Запчасть 4</a></li>
-								<li><a href="#">Запчасть 5</a></li>
-								<li><a href="#">Запчасть 6</a></li>
+								<li><a href="product.php">Запчасть 1</a></li>
+								<li><a href="product.php">Запчасть 2</a></li>
+								<li><a href="product.php">Запчасть 3</a></li>
+								<li><a href="product.php">Запчасть 4</a></li>
+								<li><a href="product.php">Запчасть 5</a></li>
+								<li><a href="product.php">Запчасть 6</a></li>
 							</ul>
 							<h3 class="search__subtitle"><a href="#">Все результаты</a></h3>
 						</div>

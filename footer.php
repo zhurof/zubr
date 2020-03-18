@@ -5,16 +5,16 @@
 					<div class="footer__column">
 						<h3 class="footer__title">Каталог</h3>
 						<ul class="footer__menu">
-							<li><a href="#">Запчасти МТЗ</a></li>
-							<li><a href="#">Запчасти МАЗ</a></li>
-							<li><a href="#">Запчасти Амкодор</a></li>
-							<li><a href="#">Запчасти к дорожно-строительной технике</a></li>
-							<li><a href="#">Запчасти к коммунальной технике</a></li>
-							<li><a href="#">Запчасти ЮМЗ</a></li>
-							<li><a href="#">Запчасти Т-16, Т-25, Т-40</a></li>
-							<li><a href="#">Запчасти Т-150</a></li>
-							<li><a href="#">Двигатели и запасные части к ним</a></li>
-							<li><a href="#">Гидрооборудование</a></li>
+							<li><a href="catalog.php">Запчасти МТЗ</a></li>
+							<li><a href="catalog.php">Запчасти МАЗ</a></li>
+							<li><a href="catalog.php">Запчасти Амкодор</a></li>
+							<li><a href="catalog.php">Запчасти к дорожно-строительной технике</a></li>
+							<li><a href="catalog.php">Запчасти к коммунальной технике</a></li>
+							<li><a href="catalog.php">Запчасти ЮМЗ</a></li>
+							<li><a href="catalog.php">Запчасти Т-16, Т-25, Т-40</a></li>
+							<li><a href="catalog.php">Запчасти Т-150</a></li>
+							<li><a href="catalog.php">Двигатели и запасные части к ним</a></li>
+							<li><a href="catalog.php">Гидрооборудование</a></li>
 						</ul>
 					</div>
 					<div class="footer__column">

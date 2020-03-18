@@ -16,5 +16,5 @@
 		<input type="number" class="number-field__input" value="1" min="1" max="99" readonly />
 		<span class="number-field__btn number-field__btn--plus">+</span>		
 	</span>
-	<a href="#" class="btn btn--stroke product-card__btn">Заказать</a>
+	<a href="product.php" class="btn btn--stroke product-card__btn">Заказать</a>
 </div>

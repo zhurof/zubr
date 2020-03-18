@@ -9,59 +9,110 @@
 				</ul>
 			</div>
 		</div>
-		<div class="catalog">
+		<div class="category-block">
 			<div class="wrapper">
-				<h1 class="section-title catalog__title">Двигатель</h1>
-				<form action="" class="filter catalog__filter">
-					<span class="filter__label">Сортировать по:</span>
-					<label class="text-radio filter__option">
-						<input type="radio" name="sort" value="price" class="text-radio__input" checked>
-						<span class="text-radio__btn">Цене</span>
-					</label>
-					<label class="text-radio filter__option">
-						<input type="radio" name="sort" value="popular" class="text-radio__input">
-						<span class="text-radio__btn">Популярности</span>
-					</label>
-					<label class="text-radio filter__option">
-						<input type="radio" name="sort" value="name" class="text-radio__input">
-						<span class="text-radio__btn">Имени</span>
-					</label>
-					<span class="filter__label">Показывать по:</span>
-					<select class="filter__select">
-						<option>10</option>
-						<option selected>20</option>
-						<option>30</option>
-					</select>
-					<span class="filter__view-btn filter__view-btn--active" data-view="table">
-						<i class="icon-th"></i>
-						<span>Галерея</span>
-					</span>
-					<span class="filter__view-btn" data-view="list">
-						<i class="icon-th-list"></i>
-						<span>Список</span>
-					</span>
-				</form>
-				<div class="catalog__thead">
-					<div class="catalog__th">Наименование</div>
-					<div class="catalog__th">Розница</div>
-					<div class="catalog__th">Опт</div>
-					<div class="catalog__th">Количество</div>
+				<div class="category-block__head">
+					<h1 class="section-title category-block__title">Запчасти МАЗ</h1>
 				</div>
-				<div class="box catalog__box">
-					<?
-						for($i=0;$i<16;$i++){
-							include "product-card.php";
-						}
-					?>
-				</div>
-				<div class="pagination catalog__pagination">
-					<a href="#" class="fa-angle-left pagination__arrow pagination__arrow--prev"></a>
-					<a href="#" class="pagination__link pagination__link--active">1</a>
-					<a href="#" class="pagination__link">2</a>
-					<a href="#" class="pagination__link">3</a>
-					<a href="#" class="pagination__link">4</a>
-					<a href="#" class="pagination__link">5</a>
-					<a href="#" class="fa-angle-right pagination__arrow pagination__arrow--next"></a>
+				<div class="box category-block__box">
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/0.png" alt="">
+						</div>
+						<h3 class="category-card__title">Передача карданная</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/1.png" alt="">
+						</div>
+						<h3 class="category-card__title">Коробка раздаточная</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/2.png" alt="">
+						</div>
+						<h3 class="category-card__title">Двигатель</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/3.png" alt="">
+						</div>
+						<h3 class="category-card__title">Механизм переключения передач</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/4.png" alt="">
+						</div>
+						<h3 class="category-card__title">Система питания</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/5.png" alt="">
+						</div>
+						<h3 class="category-card__title">Система выпуска отработавших газов</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/6.png" alt="">
+						</div>
+						<h3 class="category-card__title">Система охлаждения</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/7.png" alt="">
+						</div>
+						<h3 class="category-card__title">Сцепление</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/0.png" alt="">
+						</div>
+						<h3 class="category-card__title">Передача карданная</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/1.png" alt="">
+						</div>
+						<h3 class="category-card__title">Коробка раздаточная</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/2.png" alt="">
+						</div>
+						<h3 class="category-card__title">Двигатель</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/3.png" alt="">
+						</div>
+						<h3 class="category-card__title">Механизм переключения передач</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/4.png" alt="">
+						</div>
+						<h3 class="category-card__title">Система питания</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
+					<div class="category-card">
+						<div class="category-card__pic">
+							<img src="img/catalog/5.png" alt="">
+						</div>
+						<h3 class="category-card__title">Система выпуска отработавших газов</h3>
+						<a href="category.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+					</div>
 				</div>
 			</div>
 		</div>

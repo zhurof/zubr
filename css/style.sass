@@ -139,8 +139,7 @@ select
 		z-index: -1
 		opacity: 0
 	&__btn
-		display: block
-		min-width: 120px
+		display: block		
 		text-align: center
 		border: 1px solid #E7E7E7
 		font-size: 14px
@@ -255,6 +254,20 @@ ul,ol
 	margin: 0 0 1em
 		
 /*таблицы*/
+.table-wrapper
+	max-width: 100%
+	overflow: auto
+table
+	font-size: 14px
+	border-collapse: collapse
+td,th
+	padding: 4px 23px
+	vertical-align: top
+	&:first-child
+		padding-left: 0
+	&:last-child
+		padding-right: 0
+
 /*контейнеры*/
 .wrapper
 	max-width: 1170px
@@ -743,6 +756,8 @@ ul,ol
 .feedback
 	color: #fff
 	font-size: 14px
+	&:last-child
+		margin-bottom: 80px
 	&__inner
 		background: url(../img/feedback.jpg) no-repeat center/cover
 		padding: 50px
@@ -969,6 +984,7 @@ ul,ol
 			margin-right: 0
 	&__option
 		margin: 0 15px 0 0
+		min-width: 120px
 		&:last-child
 			margin-right: 0
 	&__select
@@ -1039,11 +1055,40 @@ ul,ol
 		display: none
 	&__btn
 		width: 200px
+		flex: 0 0 auto
 		position: static
 		&:before
 			content: ''
 			+pos
-	
+	&--horizontal
+		flex-direction: row
+		width: calc(100% - 30px)
+		padding: 12px 30px 12px 12px
+		min-height: 0
+		text-align: left
+	&--horizontal &__pic
+		width: 80px
+		flex: 0 0 auto
+		margin: 0 42px 0 0
+		&:before
+			padding-top: 100%
+	&--horizontal &__main
+		flex: 1 1 auto
+		padding-right: 15px
+	&--horizontal &__price
+		display: inline-block
+		font-size: 18px
+		font-weight: 400
+		width: 98px
+		flex: 0 0 auto
+		margin: 0
+	&--horizontal &__amount
+		display: inline-flex
+		flex: 0 0 98px
+		margin-right: 35px
+	&--horizontal &__btn
+		&:before
+			display: none
 .catalog
 	padding: 75px 0
 	&__thead
@@ -1052,7 +1097,7 @@ ul,ol
 		color: #2a2a2a
 		font-size: 14px
 		text-transform: uppercase
-		padding: 0 230px 0 135px
+		padding: 0 265px 0 135px
 		&--active
 			display: flex
 	&__th
@@ -1062,6 +1107,117 @@ ul,ol
 			flex: 1 1 auto
 	&__pagination
 		margin-top: 50px
+.product
+	padding: 80px 0 60px
+	&__wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: flex-start
+	&__pic
+		border: 1px solid #E7E7E7
+		width: calc(50% - 15px)
+		position: relative
+		padding: 56px 25px 56px 120px
+	&__thumbs
+		position: absolute
+		left: 15px
+		top: 50%
+		transform: translateY(-50%)
+		width: 80px
+		&:not(.slick-initialized)
+			display: none
+	&__thumb
+		display: block
+		border: 1px solid #E7E7E7
+		padding: 12px
+		position: relative
+		margin: 7.5px 0
+		&.slick-slide
+			border: 1px solid #E7E7E7
+		img
+			height: 56px
+			object-fit: contain
+			object-position: center
+			margin: auto
+	&__arrow
+		display: block
+		margin: 0 auto
+		border: none
+	&__slide
+		&:not(.slick-slide):nth-child(n+2)
+			display: none
+		img
+			display: block
+			margin: auto
+			height: 345px
+			object-fit: contain
+			object-position: center		
+	&__text
+		width: calc(50% - 15px)
+		color: #333
+	&__info
+		font-size: 14px
+		margin: 0 0 17px
+		&:last-child
+			margin-bottom: 0
+	&__char
+		display: inline-block
+		margin-right: 2em
+	&__title
+		font-family: inherit
+		font-size: 38px
+		line-height: 1
+		margin: 0 0 15/38*1em
+	&__description
+		margin: 0 0 50/16*1em
+		&:last-child
+			margin-bottom: 0
+	&__price
+		font-size: 32px
+		font-weight: bold
+		margin: 0 0 21/32*1em
+		&:last-child
+			margin-bottom: 0
+	&__btn
+		width: 200px
+	&__main
+		padding: 60px 0 0
+		width: 100%
+.tabs
+	&__head
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-end
+		border-bottom: 1px solid #E7E7E7
+		margin: 0 0 30px
+		&:last-child
+			margin-bottom: 0
+	&__trigger
+		display: inline-block
+		position: relative
+		cursor: pointer
+		user-select: none
+		font-size: 18px
+		font-family: Palatino, sans-serif
+		padding: .5em 2em
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			border-top: 3px solid transparent
+			transition: all .3s ease
+		&--active
+			font-weight: bold
+			&:after
+				border-color: $red
+	&__item
+		display: none
+	
+		
 /*ПОДВАЛ*/
 .footer
 	&:before
