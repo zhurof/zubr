@@ -17,54 +17,54 @@
 				</form>
 				<div class="search-page__content">
 					<div class="product-block">
-						<a href="#" class="product-block__pic"><img src="img/catalog/0.png" alt=""></a>
+						<a href="product.php" class="product-block__pic"><img src="img/catalog/0.png" alt=""></a>
 						<div class="product-block__text">
-							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="#">Каталог</a> — <a href="#">Запчасти МАЗ</a> — <strong><a href="#">Двигатель</a></strong></div>
+							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="catalog.php">Каталог</a> — <a href="catalog.php">Запчасти МАЗ</a> — <strong><a href="category.php">Двигатель</a></strong></div>
 							<h3 class="product-block__title"><a href="#">Шестерня привода ходоуменьшителя (А) (70-1701224-СБ)</a></h3>
 							<div class="product-block__description">70-1701224-СБ Шестерня привода ходоуменьшителя (А)</div>
 							<div class="product-block__price">252 BYN</div>
 						</div>
 					</div>
 					<div class="product-block">
-						<a href="#" class="product-block__pic"><img src="img/catalog/1.png" alt=""></a>
+						<a href="product.php" class="product-block__pic"><img src="img/catalog/1.png" alt=""></a>
 						<div class="product-block__text">
-							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="#">Каталог</a> — <a href="#">Запчасти МАЗ</a> — <strong><a href="#">Двигатель</a></strong></div>
+							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="catalog.php">Каталог</a> — <a href="catalog.php">Запчасти МАЗ</a> — <strong><a href="category.php">Двигатель</a></strong></div>
 							<h3 class="product-block__title"><a href="#">Шестерня привода ходоуменьшителя (А) (70-1701224-СБ)</a></h3>
 							<div class="product-block__description">70-1701224-СБ Шестерня привода ходоуменьшителя (А)</div>
 							<div class="product-block__price">252 BYN</div>
 						</div>
 					</div>
 					<div class="product-block">
-						<a href="#" class="product-block__pic"><img src="img/catalog/2.png" alt=""></a>
+						<a href="product.php" class="product-block__pic"><img src="img/catalog/2.png" alt=""></a>
 						<div class="product-block__text">
-							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="#">Каталог</a> — <a href="#">Запчасти МАЗ</a> — <strong><a href="#">Двигатель</a></strong></div>
+							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="catalog.php">Каталог</a> — <a href="catalog.php">Запчасти МАЗ</a> — <strong><a href="category.php">Двигатель</a></strong></div>
 							<h3 class="product-block__title"><a href="#">Шестерня привода ходоуменьшителя (А) (70-1701224-СБ)</a></h3>
 							<div class="product-block__description">70-1701224-СБ Шестерня привода ходоуменьшителя (А)</div>
 							<div class="product-block__price">252 BYN</div>
 						</div>
 					</div>
 					<div class="product-block">
-						<a href="#" class="product-block__pic"><img src="img/catalog/3.png" alt=""></a>
+						<a href="product.php" class="product-block__pic"><img src="img/catalog/3.png" alt=""></a>
 						<div class="product-block__text">
-							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="#">Каталог</a> — <a href="#">Запчасти МАЗ</a> — <strong><a href="#">Двигатель</a></strong></div>
+							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="catalog.php">Каталог</a> — <a href="catalog.php">Запчасти МАЗ</a> — <strong><a href="category.php">Двигатель</a></strong></div>
 							<h3 class="product-block__title"><a href="#">Шестерня привода ходоуменьшителя (А) (70-1701224-СБ)</a></h3>
 							<div class="product-block__description">70-1701224-СБ Шестерня привода ходоуменьшителя (А)</div>
 							<div class="product-block__price">252 BYN</div>
 						</div>
 					</div>
 					<div class="product-block">
-						<a href="#" class="product-block__pic"><img src="img/catalog/4.png" alt=""></a>
+						<a href="product.php" class="product-block__pic"><img src="img/catalog/4.png" alt=""></a>
 						<div class="product-block__text">
-							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="#">Каталог</a> — <a href="#">Запчасти МАЗ</a> — <strong><a href="#">Двигатель</a></strong></div>
+							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="catalog.php">Каталог</a> — <a href="catalog.php">Запчасти МАЗ</a> — <strong><a href="category.php">Двигатель</a></strong></div>
 							<h3 class="product-block__title"><a href="#">Шестерня привода ходоуменьшителя (А) (70-1701224-СБ)</a></h3>
 							<div class="product-block__description">70-1701224-СБ Шестерня привода ходоуменьшителя (А)</div>
 							<div class="product-block__price">252 BYN</div>
 						</div>
 					</div>
 					<div class="product-block">
-						<a href="#" class="product-block__pic"><img src="img/catalog/5.png" alt=""></a>
+						<a href="product.php" class="product-block__pic"><img src="img/catalog/5.png" alt=""></a>
 						<div class="product-block__text">
-							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="#">Каталог</a> — <a href="#">Запчасти МАЗ</a> — <strong><a href="#">Двигатель</a></strong></div>
+							<div class="product-block__breadcrumbs">Раздел: <a href="/">Главная</a> — <a href="catalog.php">Каталог</a> — <a href="catalog.php">Запчасти МАЗ</a> — <strong><a href="category.php">Двигатель</a></strong></div>
 							<h3 class="product-block__title"><a href="#">Шестерня привода ходоуменьшителя (А) (70-1701224-СБ)</a></h3>
 							<div class="product-block__description">70-1701224-СБ Шестерня привода ходоуменьшителя (А)</div>
 							<div class="product-block__price">252 BYN</div>

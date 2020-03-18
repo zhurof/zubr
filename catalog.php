@@ -9,12 +9,12 @@
 				</ul>
 			</div>
 		</div>
-		<div class="category-block">
+		<div class="catalog">
 			<div class="wrapper">
-				<div class="category-block__head">
-					<h1 class="section-title category-block__title">Запчасти МАЗ</h1>
+				<div class="catalog-block__head">
+					<h1 class="section-title catalog-block__title">Запчасти МАЗ</h1>
 				</div>
-				<div class="box category-block__box">
+				<div class="box catalog-block__box">
 					<div class="category-card">
 						<div class="category-card__pic">
 							<img src="img/catalog/0.png" alt="">

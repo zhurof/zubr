@@ -12,20 +12,20 @@
 		</div>
 		<div class="product">
 			<div class="wrapper product__wrapper">
-				<div class="product__pic">
-					<div class="product__thumbs">
-						<div class="product__thumb"><img src="img/catalog/1.png" alt=""></div>						
-						<div class="product__thumb"><img src="img/catalog/2.png" alt=""></div>						
-						<div class="product__thumb"><img src="img/catalog/4.png" alt=""></div>
-						<div class="product__thumb"><img src="img/catalog/6.png" alt=""></div>
-						<div class="product__thumb"><img src="img/catalog/7.png" alt=""></div>
-					</div>
+				<div class="product__pic">					
 					<div class="product__slider">
 						<div class="product__slide"><img src="img/catalog/1.png" alt=""></div>
 						<div class="product__slide"><img src="img/catalog/2.png" alt=""></div>						
 						<div class="product__slide"><img src="img/catalog/4.png" alt=""></div>
 						<div class="product__slide"><img src="img/catalog/6.png" alt=""></div>
 						<div class="product__slide"><img src="img/catalog/7.png" alt=""></div>
+					</div>
+					<div class="product__thumbs">
+						<div class="product__thumb"><img src="img/catalog/1.png" alt=""></div>						
+						<div class="product__thumb"><img src="img/catalog/2.png" alt=""></div>						
+						<div class="product__thumb"><img src="img/catalog/4.png" alt=""></div>
+						<div class="product__thumb"><img src="img/catalog/6.png" alt=""></div>
+						<div class="product__thumb"><img src="img/catalog/7.png" alt=""></div>
 					</div>
 				</div>
 				<div class="product__text">
@@ -96,12 +96,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="category-block">
+		<div class="catalog-block">
 			<div class="wrapper">
-				<div class="category-block__head">
-					<h1 class="section-title category-block__title">Похожие товары</h1>
+				<div class="catalog-block__head">
+					<h1 class="section-title catalog-block__title">Похожие товары</h1>
 				</div>
-				<div class="box category-block__box">
+				<div class="box catalog-block__box">
 					<?
 						for($i=0;$i<4;$i++){
 							include "product-card--small.php";

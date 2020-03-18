@@ -74,7 +74,7 @@
 								<li><a href="product.php">Запчасть 5</a></li>
 								<li><a href="product.php">Запчасть 6</a></li>
 							</ul>
-							<h3 class="search__subtitle"><a href="#">Все результаты</a></h3>
+							<h3 class="search__subtitle"><a href="search.php">Все результаты</a></h3>
 						</div>
 					</form>
 					<a href="#" class="icon-shopping-cart header__cart" data-amount="1"></a>

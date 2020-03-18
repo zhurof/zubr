@@ -692,7 +692,7 @@ td,th
 		&:after
 			content: ''
 			+pos
-.category-block
+.catalog-block
 	padding: 75px 0
 	&__head
 		display: flex
@@ -868,6 +868,7 @@ td,th
 	padding: 70px 0 50px
 	&__content
 		color: #828282
+/*используется в результатах поиска*/
 .product-block
 	display: flex
 	border: 1px solid #E7E7E7
@@ -1121,6 +1122,7 @@ td,th
 		padding: 56px 25px 56px 120px
 	&__thumbs
 		position: absolute
+		z-index: 2
 		left: 15px
 		top: 50%
 		transform: translateY(-50%)
@@ -1130,6 +1132,7 @@ td,th
 	&__thumb
 		display: block
 		border: 1px solid #E7E7E7
+		background-color: #fff
 		padding: 12px
 		position: relative
 		margin: 7.5px 0

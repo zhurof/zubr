@@ -69,10 +69,10 @@ $('.top-block').slick({
 		}
 	]
 })
-$('.category-block__filter li').click(function(){
+$('.catalog-block__filter li').click(function(){
 	if(!$(this).is('.active')){
 		var category = $(this).text(),
-				slider = $(this).closest('.category-block').find('.category-block__slider');
+				slider = $(this).closest('.catalog-block').find('.catalog-block__slider');
 		$(this).addClass('active').siblings().removeClass('active');
 		slider.slick('slickUnfilter');
 		if(category != 'Все'){
@@ -80,10 +80,10 @@ $('.category-block__filter li').click(function(){
 		}
 	}	
 })
-$('.category-block__slider').slick({
+$('.catalog-block__slider').slick({
 	slidesToShow: 4,
-	prevArrow: '<span class="fa-angle-left category-block__arrow category-block__arrow--prev">',
-	nextArrow: '<span class="fa-angle-right category-block__arrow category-block__arrow--next">',
+	prevArrow: '<span class="fa-angle-left catalog-block__arrow catalog-block__arrow--prev">',
+	nextArrow: '<span class="fa-angle-right catalog-block__arrow catalog-block__arrow--next">',
 	responsive: [
 		{
 			breakpoint: 1320,
@@ -132,7 +132,18 @@ if(slidesCount > 1 &&  thumbsCount == slidesCount){
 		verticalSwiping: true,
 		prevArrow: '<span class="fa-angle-up product__arrow product__arrow--prev" />',
 		nextArrow: '<span class="fa-angle-down product__arrow product__arrow--next" />',
-		asNavFor: '.product__slider'
+		asNavFor: '.product__slider',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					vertical: false,
+					verticalSwiping: false,
+					arrows: false,
+					focusOnSelect: true
+				}
+			}
+		]
 	})
 
 	$('.product__slider').slick({

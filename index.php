@@ -22,163 +22,163 @@
 				<div class="cat-nav__banner"><strong>> 5 000</strong> <span>Запчастей и <br>комплектующих</span></div>
 				<h2 class="section-title cat-nav__title">Каталог</h2>
 				<div class="cat-nav__box">
-					<a href="#" class="cat-nav__item" style="background-image:url(img/category/0.jpg)">
+					<a href="category.php" class="cat-nav__item" style="background-image:url(img/category/0.jpg)">
 						<span class="cat-nav__item-title">Запчасти МТЗ</span>
 						<span class="btn btn--medium cat-nav__item-btn">Перейти в каталог</span>
 					</a>
-					<a href="#" class="cat-nav__item" style="background-image:url(img/category/1.jpg)">
+					<a href="category.php" class="cat-nav__item" style="background-image:url(img/category/1.jpg)">
 						<span class="cat-nav__item-title">Запчасти МАЗ</span>
 						<span class="btn btn--medium cat-nav__item-btn">Перейти в каталог</span>
 					</a>
-					<a href="#" class="cat-nav__item" style="background-image:url(img/category/2.jpg)">
+					<a href="category.php" class="cat-nav__item" style="background-image:url(img/category/2.jpg)">
 						<span class="cat-nav__item-title">Запчасти ГАЗ (УАЗ)</span>
 						<span class="btn btn--medium cat-nav__item-btn">Перейти в каталог</span>
 					</a>
-					<a href="#" class="cat-nav__item" style="background-image:url(img/category/3.jpg)">
+					<a href="category.php" class="cat-nav__item" style="background-image:url(img/category/3.jpg)">
 						<span class="cat-nav__item-title">Гидрооборудование</span>
 						<span class="btn btn--medium cat-nav__item-btn">Перейти в каталог</span>
 					</a>
-					<a href="#" class="cat-nav__item" style="background-image:url(img/category/4.jpg)">
+					<a href="category.php" class="cat-nav__item" style="background-image:url(img/category/4.jpg)">
 						<span class="cat-nav__item-title">Запчасти Амкодор</span>
 						<span class="btn btn--medium cat-nav__item-btn">Перейти в каталог</span>
 					</a>
-					<a href="#" class="cat-nav__item" style="background-image:url(img/category/5.jpg)">
+					<a href="category.php" class="cat-nav__item" style="background-image:url(img/category/5.jpg)">
 						<span class="cat-nav__item-title">Технические жидкости</span>
 						<span class="btn btn--medium cat-nav__item-btn">Перейти в каталог</span>
 					</a>
-					<a href="#" class="cat-nav__item" style="background-image:url(img/category/6.jpg)">
+					<a href="category.php" class="cat-nav__item" style="background-image:url(img/category/6.jpg)">
 						<span class="cat-nav__item-title">Аккумуляторы</span>
 						<span class="btn btn--medium cat-nav__item-btn">Перейти в каталог</span>
 					</a>
 				</div>
 			</div>
 		</div>
-		<div class="category-block">
+		<div class="catalog-block">
 			<div class="wrapper">
-				<div class="category-block__head">
-					<h2 class="section-title category-block__title">Популярные товары</h2>
-					<ul class="category-block__filter">
+				<div class="catalog-block__head">
+					<h2 class="section-title catalog-block__title">Популярные товары</h2>
+					<ul class="catalog-block__filter">
 						<li class="active">Все</li>
 						<li>Новинки</li>
 						<li>Акции</li>
 					</ul>
 				</div>
-				<div class="category-block__slider">
+				<div class="catalog-block__slider">
 					<div class="category-card" data-category="Новинки">
 						<div class="category-card__pic">
 							<img src="img/catalog/0.png" alt="">
 						</div>
 						<h3 class="category-card__title">Передача карданная</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Новинки">
 						<div class="category-card__pic">
 							<img src="img/catalog/1.png" alt="">
 						</div>
 						<h3 class="category-card__title">Коробка раздаточная</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Акции">
 						<div class="category-card__pic">
 							<img src="img/catalog/2.png" alt="">
 						</div>
 						<h3 class="category-card__title">Двигатель</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Новинки">
 						<div class="category-card__pic">
 							<img src="img/catalog/3.png" alt="">
 						</div>
 						<h3 class="category-card__title">Механизм переключения передач</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Акции">
 						<div class="category-card__pic">
 							<img src="img/catalog/4.png" alt="">
 						</div>
 						<h3 class="category-card__title">Система питания</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Акции">
 						<div class="category-card__pic">
 							<img src="img/catalog/5.png" alt="">
 						</div>
 						<h3 class="category-card__title">Система выпуска отработавших газов</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Акции">
 						<div class="category-card__pic">
 							<img src="img/catalog/6.png" alt="">
 						</div>
 						<h3 class="category-card__title">Система охлаждения</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Новинки">
 						<div class="category-card__pic">
 							<img src="img/catalog/7.png" alt="">
 						</div>
 						<h3 class="category-card__title">Сцепление</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Новинки">
 						<div class="category-card__pic">
 							<img src="img/catalog/0.png" alt="">
 						</div>
 						<h3 class="category-card__title">Передача карданная</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Новинки">
 						<div class="category-card__pic">
 							<img src="img/catalog/1.png" alt="">
 						</div>
 						<h3 class="category-card__title">Коробка раздаточная</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Акции">
 						<div class="category-card__pic">
 							<img src="img/catalog/2.png" alt="">
 						</div>
 						<h3 class="category-card__title">Двигатель</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Новинки">
 						<div class="category-card__pic">
 							<img src="img/catalog/3.png" alt="">
 						</div>
 						<h3 class="category-card__title">Механизм переключения передач</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Акции">
 						<div class="category-card__pic">
 							<img src="img/catalog/4.png" alt="">
 						</div>
 						<h3 class="category-card__title">Система питания</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Акции">
 						<div class="category-card__pic">
 							<img src="img/catalog/5.png" alt="">
 						</div>
 						<h3 class="category-card__title">Система выпуска отработавших газов</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Акции">
 						<div class="category-card__pic">
 							<img src="img/catalog/6.png" alt="">
 						</div>
 						<h3 class="category-card__title">Система охлаждения</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 					<div class="category-card" data-category="Новинки">
 						<div class="category-card__pic">
 							<img src="img/catalog/7.png" alt="">
 						</div>
 						<h3 class="category-card__title">Сцепление</h3>
-						<a href="#" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
+						<a href="product.php" class="btn btn--stroke btn--block category-card__btn">Подробнее</a>
 					</div>
 				</div>
-				<div class="category-block__footer">
-					<a href="#" class="btn btn--dark-stroke category-block__btn">Смотреть все</a>
+				<div class="catalog-block__footer">
+					<a href="catalog.php" class="btn btn--dark-stroke catalog-block__btn">Смотреть все</a>
 				</div>
 			</div>
 		</div>
