@@ -159,4 +159,68 @@ $('.tabs__trigger').click(function(e){
 		$(this).closest('.tabs').find('.tabs__item').hide().eq(index).fadeIn(300);
 	}
 })
+/*рассчеты в корзине*/
+function calculateBasket(){
+	var totalPrice = 0;
+	$('.product-line__price--total span').each(function(){
+		var price = +$(this).text();
+		if(isFinite(price)){
+			totalPrice += price;
+		}
+	})
+	$('.basket__total-price span').text(totalPrice);
+}
+$('.product-line__amount input').change(function(){
+	var card = $(this).closest('.product-line'),
+			unitPriceEl = card.find('.product-line__price--per-unit span'),
+			totalPriceEl = card.find('.product-line__price--total span'),
+			result = unitPriceEl.text() * this.value;
+	if(isFinite(result)){
+		totalPriceEl.text(result);
+		calculateBasket();
+	}
+})
+//типа удаление товара из корзины
+$('.product-line__remove-btn').click(function(){
+	$(this).closest('.product-line').fadeOut(300,function(){
+		$(this).remove();
+		calculateBasket();
+	});
+})
+//заказ
+$('.order__option').change(function(e){
+	$(this).closest('.order__fieldset').find('.order__value').text(e.target.value);
+	var index = $(this).index();
+	$(this).closest('.order__fieldset').find('.order__fieldset-description').hide().eq(index).fadeIn(300);
+})
+$('.order__nav-btn--next').click(function(){
+	var value = $(this).closest('.order__fieldset').find('.order__option input:checked').val();
+	if(value){
+		$(this).closest('.order__fieldset').find('.order__value').text(value);
+	}
+	$(this).closest('.order__fieldset').find('.order__legend').addClass('order__legend--editable');
+	$(this).closest('.order__fieldset-body').slideUp(300);
+	$(this).closest('.order__fieldset').next().find('.order__fieldset-body').slideDown(300);
+})
+$('.order__nav-btn--prev').click(function(){
+	$(this).closest('.order__fieldset-body').slideUp(300);
+	$(this).closest('.order__fieldset').prev().find('.order__fieldset-body').slideDown(300);
+})
+$('.order__legend').click(function(){
+	if($(this).is('.order__legend--editable')){
+		var targetContent = $(this).siblings('.order__fieldset-body');
+		$('.order__fieldset-body').not(targetContent).slideUp(300);
+		targetContent.slideDown(300)
+	}
+})
 
+function calculateOrder(){
+	var price = +$('.order__price span').text() || 0,
+			delivery = +$('.order__delivery span').text() || 0;
+	$('.order__total-price span').text(price + delivery);
+}
+$('.order__form [name=delivery]').change(function(){
+	var deliveryPrice = +$(this).data('price') || 0;
+	$('.order__delivery span').text(deliveryPrice);
+	calculateOrder();
+})

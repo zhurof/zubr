@@ -26,7 +26,7 @@
 					<a href="tel:+375442595615" class="header__contact-link">+375 (44) 259-56-15</a>
 				</div>
 				<a href="#callback" class="btn btn--stroke header__btn" data-fancybox>Обратный звонок</a>
-				<a href="#" class="header__tool" data-amount="1">
+				<a href="basket.php" class="header__tool" data-amount="3">
 					<i class="icon-shopping-cart"></i>
 					<span>Корзина</span>
 				</a>
@@ -62,7 +62,7 @@
 							<option>Гидрооборудование</option>
 							<option>Аккумуляторы</option>
 						</select>
-						<input type="search" class="search__input" placeholder="Поиск по наименованию или артикулу">
+						<input type="search" class="search__input" placeholder="Поиск по наименованию или артикулу" required />
 						<button class="btn btn--small btn--dark btn--search search__btn">Найти</button>
 						<div class="search__content">
 							<h3 class="search__subtitle">Основной каталог товаров</h3>
@@ -77,7 +77,7 @@
 							<h3 class="search__subtitle"><a href="search.php">Все результаты</a></h3>
 						</div>
 					</form>
-					<a href="#" class="icon-shopping-cart header__cart" data-amount="1"></a>
+					<a href="basket.php" class="icon-shopping-cart header__cart" data-amount="3"></a>
 				</div>
 			</div>
 		</div>
