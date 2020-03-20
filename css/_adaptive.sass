@@ -10,6 +10,20 @@
 		&--dark-stroke:hover
 			background-color: $dark
 			color: #fff
+	.select
+		&__list
+			>li
+				transition: background-color .3s ease
+				&:hover
+					background-color: #E7E7E7
+					font-weight: bold
+	.slick
+		&-arrow
+			transition: all .3s ease
+			&:hover
+				border-color: $dark
+				background-color: $dark
+				color: #fff
 	.header
 		&__contact-link:hover
 			color: $red
@@ -37,6 +51,12 @@
 						&:after
 							right: 20px
 							color: $red
+	.top-block
+		&__arrow
+			&:hover
+				background-color: #fff
+				border-color: #fff
+				color: #333
 	.cat-nav
 		&__item
 			overflow: hidden
@@ -50,8 +70,6 @@
 				opacity: 1
 				pointer-events: auto
 				margin: 11px 0 6px
-			&:hover &-title
-				border-color: currentColor
 	.category-card
 		transition: all .3s ease
 		outline: 2px solid transparent
@@ -148,6 +166,16 @@
 @media(max-width:991px)
 	h1,h2
 		margin: 0 0 .6em
+	.select
+		&__input
+			z-index: 2
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			pointer-events: all
+		&__output
+			z-index: 0
 	.btn
 		&--menu
 			font-size: 0
@@ -512,6 +540,10 @@
 			display: block
 		&__item
 			min-height: 220px
+			justify-content: center
+			&-title
+				font-size: 22px
+				text-shadow: 0 0 3px #000
 	.catalog-block
 		&__title
 			margin: 0 0 .5em

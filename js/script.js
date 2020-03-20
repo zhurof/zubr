@@ -51,6 +51,24 @@ $('.number-field__btn').click(function(){
 		$(input).trigger('change');
 	}
 })
+//Кастомный select
+$('.select').blur(function(){
+	$(this).removeClass('select--open');
+})
+$('.select__output').click(function(){
+	$(this).parent('.select').toggleClass('select--open');
+})
+$('.select__list>li').click(function(){
+	var value = $(this).text(),
+			select = $(this).parents('.select');
+			
+	select.removeClass('select--open');
+	select.find('.select__input').val(value).trigger('change');
+})
+$('.select__input').change(function(){
+	var wrapper = $(this).parent('.select');	
+	wrapper.find('.select__output').text(this.value);	
+})
 //
 $('.top-block').slick({
 	prevArrow: '<span class="fa-angle-left top-block__arrow top-block__arrow--prev" />',

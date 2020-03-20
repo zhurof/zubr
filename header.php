@@ -52,16 +52,28 @@
 						</ul>
 					</div>
 					<form action="search.php" class="search header__search">
-						<select class="search__select">
-							<option disabled selected>Категория</option>
-							<option>Запчасти МТЗ</option>
-							<option>Запчасти МАЗ</option>
-							<option>Запчасти Амкодор</option>
-							<option>Запчасти ГАЗ (УАЗ)</option>
-							<option>Технические жидкости</option>
-							<option>Гидрооборудование</option>
-							<option>Аккумуляторы</option>
-						</select>
+						<div class="select select--medium select--red-border search__select" tabindex="0">
+							<select class="select__input" tabindex="-1" required>
+								<option value="" disabled selected>Категория</option>
+								<option>Запчасти МТЗ</option>
+								<option>Запчасти МАЗ</option>
+								<option>Запчасти Амкодор</option>
+								<option>Запчасти ГАЗ (УАЗ)</option>
+								<option>Технические жидкости</option>
+								<option>Гидрооборудование</option>
+								<option>Аккумуляторы</option>
+							</select>
+							<div class="select__output">Категория</div>									
+							<ul class="select__list">
+								<li>Запчасти МТЗ</li>
+								<li>Запчасти МАЗ</li>
+								<li>Запчасти Амкодор</li>
+								<li>Запчасти ГАЗ (УАЗ)</li>
+								<li>Технические жидкости</li>
+								<li>Гидрооборудование</li>
+								<li>Аккумуляторы</li>
+							</ul>													
+						</div>
 						<input type="search" class="search__input" placeholder="Поиск по наименованию или артикулу" required />
 						<button class="btn btn--small btn--dark btn--search search__btn">Найти</button>
 						<div class="search__content">

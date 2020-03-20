@@ -27,11 +27,19 @@
 						<span class="text-radio__btn">Имени</span>
 					</label>
 					<span class="filter__label">Показывать по:</span>
-					<select class="filter__select">
-						<option>10</option>
-						<option selected>20</option>
-						<option>30</option>
-					</select>
+					<div class="select select--small filter__select" tabindex="0">
+						<select class="select__input" tabindex="-1" >
+							<option>10</option>
+							<option selected>20</option>
+							<option>30</option>
+						</select>
+						<div class="select__output">20</div>									
+						<ul class="select__list">
+							<li>10</li>
+							<li>20</li>
+							<li>30</li>
+						</ul>													
+					</div>
 					<span class="filter__view-btn filter__view-btn--active" data-view="table">
 						<i class="icon-th"></i>
 						<span>Галерея</span>

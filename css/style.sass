@@ -96,7 +96,8 @@ textarea
 	border: 1px solid #C4C4C4
 	padding: 13.5px 15px	
 	&:last-child
-		margin-bottom: 0	
+		margin-bottom: 0
+/*стандартный select*/		
 select
 	font-size: 14px
 	line-height: normal
@@ -112,6 +113,83 @@ select
 		margin-bottom: 0
 	&::-ms-expand
 		display: none
+		
+/*кастомный select*/
+.select
+	display: block
+	position: relative
+	text-align: left
+	margin: 0 0 15px
+	&:last-child
+		margin-bottom: 0
+	&:after
+		content: ''
+		display: inline-block
+		font: normal normal 14px/1 fontAwesome
+		position: absolute
+		top: calc(50% - .5em)
+		right: 15px
+		pointer-events: none
+		z-index: 2
+		transition: transform .2s ease
+	&--open
+		&:after
+			transform: rotate(180deg)
+			color: $red
+	&__input
+		position: absolute
+		z-index: -1
+		opacity: 0
+		pointer-events: none
+	&__output
+		font-size: 14px
+		line-height: normal
+		border: 1px solid #C4C4C4
+		background-color: #fff
+		padding: 13.5px 30px 13.5px 15px
+		transition: all .2s ease
+		white-space: nowrap
+		max-width: 100%
+		overflow: hidden
+		text-overflow: ellipsis
+		position: relative
+		z-index: 2
+		cursor: default
+		user-select: none
+		&:after
+			/*чтобы при  отсутствии текста не схлопывался*/
+			content: '\00A0'
+	&--medium &__output
+		padding-top: 11px
+		padding-bottom: 11px
+	&--small &__output
+		padding: 3px 30px 3px 15px
+	&--red-border &__output
+		border-color: $red
+	&__list
+		+unlist
+		display: none
+		position: absolute
+		top: 100%
+		left: 0
+		width: 100%
+		background-color: #fff
+		user-select: none
+		z-index: 3
+		box-shadow: 0 3px 6px rgba(0,0,0,.2)
+		font-size: 14px
+		overflow: hidden
+		>li
+			padding: 11.5px 10px 11.5px 15px
+			cursor: pointer
+			border-bottom: 1px solid #E7E7E7
+			&:last-child
+				border-bottom: none
+	&--small &__list>li
+		padding-top: 6px
+		padding-bottom: 6px
+	&--open &__list
+		display: block
 		
 [type=search]
 	&::-webkit-search-decoration,
@@ -350,7 +428,7 @@ table
 	font-size: 14px
 	border-collapse: collapse
 td,th
-	padding: 4px 23px
+	padding: 7px 23px
 	vertical-align: top
 	&:first-child
 		padding-left: 0
@@ -424,13 +502,8 @@ td,th
 	flex: 1 1 auto
 	color: $dark
 	&__select
-		padding-top: 11px
-		padding-bottom: 11px
-		border-color: $red
+		width: 200px
 		margin: 0
-		@supports(-moz-appearance: textfield)
-			padding-top: 10px
-			padding-bottom: 10px
 	&__input
 		width: auto
 		padding-top: 11px
@@ -585,6 +658,13 @@ td,th
 						top: calc(50% - .5em)
 						left: 25px
 						font-weight: 400
+					img
+						display: inline-block
+						width: 22px
+						position: absolute
+						top: 50%
+						left: 25px
+						transform: translateY(-50%)
 	&__cart
 		display: none
 		position: relative
@@ -636,7 +716,6 @@ td,th
 			margin: 0 0 .35em
 	&__arrow
 		color: #fff
-		border: 1px solid
 		position: absolute
 		bottom: 80px
 		&--prev
@@ -726,7 +805,6 @@ td,th
 			display: block
 			font-size: 22px
 			font-weight: bold
-			border-bottom: 1px solid transparent
 			position: relative
 			z-index: 1
 		&-btn
@@ -1078,7 +1156,8 @@ td,th
 		&:last-child
 			margin-right: 0
 	&__select
-		padding: 3px 37px 3px 14px
+		display: inline-block
+		min-width: 70px
 		margin: 0 15px 0 0
 		background-size: 8px auto
 		background-position: right 12px center
